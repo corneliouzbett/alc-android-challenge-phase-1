@@ -20,5 +20,6 @@ public class MainActivity extends AppCompatActivity {
         profileButton = findViewById(R.id.profile_button);
 
         aboutButton.setOnClickListener( about -> startActivity(new Intent(MainActivity.this, AboutActivity.class)));
+        profileButton.setOnClickListener( profile -> startActivity(new Intent(MainActivity.this, MyProfileActivity.class)));
     }
 }
